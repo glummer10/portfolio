@@ -1,4 +1,4 @@
-import { Code, Coffee, Book, Briefcase, Globe, Rocket, Server, Database, Cloud, Users, Zap } from 'lucide-react'
+import { Code, Coffee, Book, Rocket, Server, Database, Zap } from 'lucide-react'
 
 export default function SobreMin() {
   const skills = [

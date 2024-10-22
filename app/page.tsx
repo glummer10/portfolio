@@ -1,10 +1,8 @@
 'use client'
-
 import { useState } from 'react'
-import { Moon, Sun, Github, Linkedin, Mail, ExternalLink, Menu, X } from 'lucide-react'
+import {  Menu, X } from 'lucide-react'
 import { SiJavascript, SiTypescript, SiNextdotjs, SiNestjs } from 'react-icons/si'
 import SobreMin from '@/components/sobre'
-import { BsDiscord } from 'react-icons/bs'
 import ContactSection from '@/components/contato'
 
 export default function Home() {
