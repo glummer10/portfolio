@@ -22,7 +22,8 @@ export const metadata: Metadata = {
     tags: ["dev", "freelance", "brasil", "bot discord", "devolop", "javascript", "typescript", "gedson", "gedson portfolio"],
     images: [
       `/graph.png`
-    ]
+    ],
+    url: "https://gedson.vercel.app/"
   },
   robots: {
     index: true,
