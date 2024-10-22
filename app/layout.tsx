@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: "Acesse meu portfólio para ver meus projeto habilidades etc..",
     tags: ["dev", "freelance", "brasil", "bot discord", "devolop", "javascript", "typescript", "gedson", "gedson portfolio"],
     images: [
-      `/grapg.png`
+      `/graph.png`
     ]
   },
   robots: {
