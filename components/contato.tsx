@@ -6,7 +6,7 @@ const ContactSection = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [popupMessage, setPopupMessage] = useState('');
 
-  const handleContactClick = (type) => {
+  const handleContactClick = (type: any) => {
     let message = '';
     if (type === 'discord') {
       message = "Discord: \n@gdez.ai";
