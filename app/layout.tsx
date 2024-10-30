@@ -1,27 +1,28 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
 
 import Navbar from "@/components/navbar";
+import Footer from "@/components/footer"
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
 
+//meta tags para melhor ceo
 export const metadata: Metadata = {
-  title: "Portfólio",
-  description: "Meu portfólio",
+  title: "Portfólio de Gedson - Desenvolvedor",
+  description: "Explore meu portfólio para conhecer meus projetos, habilidades e experiências como desenvolvedor. Venha conferir o que posso oferecer!",
   openGraph: {
-    title: "Portfólio do gedson",
-    description: "Acesse meu portfólio para ver meus projeto habilidades etc..",
-    tags: ["dev", "freelance", "brasil", "bot discord", "devolop", "javascript", "typescript", "gedson", "gedson portfolio"],
+      title: "Portfólio de Gedson - Descubra Meu Trabalho",
+      description: "Visite meu portfólio para ver projetos, habilidades e inovações no desenvolvimento. Estou sempre aberto a novas oportunidades!",
+      tags: [
+        "desenvolvedor",
+        "freelancer",
+        "Brasil",
+        "bot Discord",
+        "desenvolvimento",
+        "JavaScript",
+        "TypeScript",
+        "Gedson",
+        "portfólio Gedson"
+    ],
     images: [
       `/graph.png`
     ],
@@ -41,11 +42,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black`}
-      >
+      <body className={`antialiased bg-black`}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
