@@ -41,21 +41,6 @@ export default function SobreMin() {
             ))}
           </div>
 
-          <div className="col-span-12 md:col-span-4 bg-black border border-stone-900 p-6 rounded-lg flex items-center justify-center">
-            <div className="text-center">
-              <Book className="h-12 w-12 mx-auto mb-4 text-green-400" />
-              <h4 className="text-xl font-semibold mb-2">Em Busca de conhecimento</h4>
-              <p className="text-gray-400">Sempre expandindo meu conhecimento e minhas habilidades</p>
-            </div>
-          </div>
-
-          <div className="col-span-12 md:col-span-4 bg-black border border-stone-900 p-6 rounded-lg flex items-center justify-center">
-            <div className="text-center">
-              <Rocket className="h-12 w-12 mx-auto mb-4 text-purple-400" />
-              <h4 className="text-xl font-semibold mb-2">Em busca de inovação</h4>
-              <p className="text-gray-400">Busco inovação, colaborando em projetos.</p>
-            </div>
-          </div>
           <div className="col-span-12 border border-stone-900 p-6 rounded-lg">
             <blockquote className="text-xl italic font-semibold text-center">
               "A melhor maneira de prever o futuro da programação é criá-lo."
