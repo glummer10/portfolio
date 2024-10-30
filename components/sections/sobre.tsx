@@ -9,7 +9,7 @@ export default function SobreMin() {
   ]
 
   return (
-    <div id='sobre' className="bg-black text-white min-h-screen py-20">
+    <div id='sobre' className="section bg-black text-white min-h-screen py-20">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold mb-12 text-center">Sobre min</h2>
         <div className="grid grid-cols-12 gap-4">

@@ -36,7 +36,7 @@ const ContactSection = () => {
   }, [isPopupOpen]);
 
   return (
-    <section id="Contato" className="bg-black py-20">
+    <section id="Contato" className="section bg-black py-20 *:text-white">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-bold mb-10 text-center">Contatos:</h2>
         <div className="flex justify-center space-x-6">
