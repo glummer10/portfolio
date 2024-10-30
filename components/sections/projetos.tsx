@@ -18,16 +18,16 @@ export default function Projetos() {
             <h2 className="text-3xl font-bold mb-10 text-center">Projetos</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-                {projetos.map((project, index) => (
-                    <Link href={`${project.link}`}>
-                        <div key={index} className="border border-stone-900 rounded-lg p-6">
-                            <div className="h-6 bg-gray-300 rounded mb-4">{project.name}</div>
-                            <div className="h-4 bg-gray-300 rounded mb-2">{project.description}</div>
-                            <div className="h-4 bg-gray-300 rounded mb-4"></div>
-                            <div className="h-4 bg-gray-300 rounded w-1/2"></div>
-                        </div>
-                    </Link>
-                ))}
+            {projetos.map((project, index) => (
+                <Link key={index} href={project.link} passHref>
+                    <div className="border border-stone-900 rounded-lg p-6 transition-transform transform hover:scale-105 hover:shadow-lg cursor-pointer">
+                        <div className="text-xl font-semibold mb-2">{project.name}</div>
+                        <div className="text-gray-700 mb-4">{project.description}</div>
+                        <div className="h-4 bg-gray-300 rounded mb-4"></div>
+                        <div className="h-4 bg-gray-300 rounded w-1/2"></div>
+                    </div>
+                </Link>
+            ))}
             </div>
         </section>
     )
