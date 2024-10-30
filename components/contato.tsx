@@ -1,3 +1,5 @@
+"use client"
+
 import { useEffect, useState } from 'react';
 import { BsDiscord } from 'react-icons/bs';
 import { Mail } from 'lucide-react'
