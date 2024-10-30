@@ -56,33 +56,11 @@ export default function SobreMin() {
               <p className="text-gray-400">Busco inovação, colaborando em projetos.</p>
             </div>
           </div>
-
-          
-          <div className="flex justify-center items-center min-h-screen">
-      <div className="relative perspective">
-        <div className="card bg-white border border-stone-900 p-6 rounded-lg shadow-lg transition-transform duration-700 transform-gpu hover:rotate-y-180">
-          <blockquote className="text-xl italic font-semibold text-center">
-            "A melhor maneira de prever o futuro da programação é criá-lo."
-          </blockquote>
-        </div>
-        <div className="line absolute top-0 left-0 w-full h-1 bg-blue-500 transform translate-y-1/2 scale-x-0 transition-transform duration-700 delay-300 hover:scale-x-100"></div>
-      </div>
-
-      <style jsx>{`
-        .perspective {
-          perspective: 1000px;
-        }
-        .card {
-          width: 300px;
-          height: 200px;
-          transition: transform 0.6s;
-          transform-style: preserve-3d;
-        }
-        .card:hover .line {
-          transform: scaleX(1);
-        }
-      `}</style>
-    </div>
+          <div className="col-span-12 border border-stone-900 p-6 rounded-lg">
+            <blockquote className="text-xl italic font-semibold text-center">
+              "A melhor maneira de prever o futuro da programação é criá-lo."
+            </blockquote>
+          </div>
         </div>
       </div>
     </div>
