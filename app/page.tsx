@@ -1,44 +1,12 @@
-'use client'
-import { useState } from 'react'
-import {  Menu, X } from 'lucide-react'
-import { SiJavascript, SiTypescript, SiNextdotjs, SiNestjs } from 'react-icons/si'
-import SobreMin from '@/components/sobre'
-import ContactSection from '@/components/contato'
+import { SiJavascript, SiTypescript, SiNextdotjs, SiNestjs } from 'react-icons/si';
+
+import SobreMin from '@/components/sobre';
+import ContactSection from '@/components/contato';
 
 export default function Home() {
-  const [menuOpen, setMenuOpen] = useState(false)
-
-  const toggleMenu = () => setMenuOpen(!menuOpen)
-
   return (
     <div  className={`min-h-screen`}>
       <div className="bg-black text-white transition-colors duration-300 fist">
-        {/* Navbar */}
-        <nav className="fixed top-0 left-0 right-0 z-50 border border-stone-900 bg-black backdrop-blur shadow-md">
-          <div className="container mx-auto px-6 py-3">
-            <div className="flex justify-between items-center">
-              <a href="#" className="text-2xl font-bold">Gedson</a>
-              <div className="hidden md:flex items-center space-x-4">
-                <a href="#Projetos" className="hover:text-gray-600 dark:hover:text-gray-300">Projetos</a>
-                <a href="#Contato" className="hover:text-gray-600 dark:hover:text-gray-300">Contato</a>
-              </div>
-              <div className="md:hidden">
-                <button onClick={toggleMenu} className="focus:outline-none">
-                  {menuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-                </button>
-              </div>
-            </div>
-          </div>
-          {/* Mobile menu */}
-          {menuOpen && (
-            <div className="md:hidden bg-black py-2">
-              <a href="#Projetos" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700">Projetos</a>
-              <a href="#Contato" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700">Contato</a>
-            </div>
-          )}
-        </nav>
-
-        {/* Hero Section */}
         <div className="w-full relative bg-center bg-no-repeat bg-cover pt-20 mb-40 z-10"
           style={{ backgroundImage: "url(./hero.svg)" }}>
           <div className="container mx-auto px-6 py-20">
@@ -78,7 +46,6 @@ export default function Home() {
 
         <ContactSection />
 
-        {/* Footer */}
         <footer className="bg-black py-6">
           <div className="container mx-auto px-6 text-center text-gray-600 dark:text-gray-400">
             <p>&copy; 2023 Gedson.</p>
