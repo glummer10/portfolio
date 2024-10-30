@@ -21,10 +21,8 @@ export default function Projetos() {
             {projetos.map((project, index) => (
                 <Link key={index} href={project.link} passHref>
                     <div className="border border-stone-900 rounded-lg p-6 transition-transform transform hover:scale-105 hover:shadow-lg cursor-pointer">
-                        <div className="text-xl font-semibold mb-2">{project.name}</div>
+                        <div className="text-white text-xl font-semibold mb-2">{project.name}</div>
                         <div className="text-gray-700 mb-4">{project.description}</div>
-                        <div className="h-4 bg-gray-300 rounded mb-4"></div>
-                        <div className="h-4 bg-gray-300 rounded w-1/2"></div>
                     </div>
                 </Link>
             ))}
