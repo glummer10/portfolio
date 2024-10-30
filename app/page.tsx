@@ -1,3 +1,4 @@
+"use client"
 import { useEffect } from 'react';
 import SobreMin from '@/components/sections/sobre';
 import ContactSection from '@/components/sections/contato';
